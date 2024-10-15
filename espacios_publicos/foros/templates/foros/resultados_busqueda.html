@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <form method="POST" action="{% url 'logout' %}">
+        {% csrf_token %}
+        <button type="submit" class="btn btn-danger">Logout</button>
+    </form>
+
+
+    <title>Resultados de la Búsqueda</title>
+</head>
+<body>
+    <h2>Resultados de búsqueda para "{{ query }}"</h2>
+    <ul>
+        {% for foro in resultados %}
+            <li><a href="{% url 'detalle_foro' foro.espacio.id foro.id %}">{{ foro.titulo }}</a></li>
+        {% empty %}
+            <p>No se encontraron foros que coincidan con la búsqueda.</p>
+        {% endfor %}
+    </ul>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<h2>Foros en {{ espacio.nombre }}</h2>
+
+<form method="GET">
+    <form method="POST" action="{% url 'logout' %}">
+        {% csrf_token %}
+        <button type="submit" class="btn btn-danger">Logout</button>
+    </form>
+
+
+    <input type="text" name="q" placeholder="Buscar foros..." value="{{ request.GET.q }}">
+    <button type="submit">Buscar</button>
+</form>
+
+<ul>
+    {% for foro in foros %}
+        <li>
+            <a href="{% url 'detalle_foro' espacio.id foro.id %}">{{ foro.titulo }}</a>
+            <p>{{ foro.descripcion }}</p>
+        </li>
+    {% empty %}
+        <p>No se encontraron foros.</p>
+    {% endfor %}
+</ul>
+
+<a href="{% url 'crear_foro' espacio.id %}">Crear un nuevo foro</a>

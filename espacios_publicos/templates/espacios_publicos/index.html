@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Espacios Deportivos en la CDMX</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Header con título centrado -->
+        <header class="text-center my-5">
+            <h1 class="display-4">Espacios Deportivos en la CDMX</h1>
+        </header>
+
+        <!-- Sección de botones para Login y Register -->
+        <div class="d-flex justify-content-center gap-3">
+            <a href="{% url 'login' %}" class="btn btn-primary btn-lg">Iniciar Sesión</a>
+            <a href="{% url 'register' %}" class="btn btn-success btn-lg">Registrarse</a>
+        </div>
+
+        <!-- Pie de página con enlace para contacto o información adicional -->
+        <footer class="text-center mt-5">
+            <p>&copy; 2024 Espacios Deportivos en la CDMX. Todos los derechos reservados.</p>
+        </footer>
+    </div>
+
+    <!-- Bootstrap JS (para que funcione cualquier interacción si es necesario en el futuro) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,486 @@
+{
+    "type": "FeatureCollection",
+    "crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "no": 1,
+                "alcaldia": "Azcapotzalco",
+                "nombre_instalacion": "DEPORTIVO RENOVACION SOCIAL",
+                "direccion": "SANCHEZ COLIN S/N, COL.PROVENCIA",
+                "costo": 0.0,
+                "deporte": "Gimnasio, Alberca",
+                "servicios": "Baños, Seguridad",
+                "tipo_pasto": "Sintético",
+                "horario": "Lunes a Viernes 8:00 - 18:00"
+            },
+            "geometry": { "type": "Point", "coordinates": [-99.214897972731976, 19.490780158051404] }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "no": 2,
+                "alcaldia": "Álvaro Obregón",
+                "nombre_instalacion": "CENTRO DEPORTIVO Y CULTURAL PLATEROS",
+                "direccion": "Francisco de P. Miranda, Merced Gómez",
+                "costo": 50.0,
+                "deporte": "Cultura, Danza",
+                "servicios": "Baños, Comercios",
+                "tipo_pasto": "Natural",
+                "horario": "Lunes a Sábado 9:00 - 19:00"
+            },
+            "geometry": { "type": "Point", "coordinates": [-99.19275, 19.368222222] }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "no": 3,
+                "alcaldia": "Álvaro Obregón",
+                "nombre_instalacion": "DEPORTIVO BATALLÓN DE SAN PATRICIO",
+                "direccion": "AV CALLE 10 ENTRE ESCUADRO 201 Y CANARIO",
+                "costo": 0.0,
+                "deporte": "Fútbol",
+                "servicios": "Baños, Seguridad",
+                "tipo_pasto": "Arcilla",
+                "horario": "24 horas"
+            },
+            "geometry": { "type": "Point", "coordinates": [-99.198916667, 19.389638889] }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "no": 4,
+                "alcaldia": "Álvaro Obregón",
+                "nombre_instalacion": "DEPORTIVO LAS ÁGUILAS",
+                "direccion": "Cerrada Cóndor s/n, Águilas",
+                "costo": 20.0,
+                "deporte": "Voleibol",
+                "servicios": "Seguridad, Comercios",
+                "tipo_pasto": "No especificado",
+                "horario": "7:00 - 21:00"
+            },
+            "geometry": { "type": "Point", "coordinates": [-99.210975323, 19.361390272] }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "no": 5,
+                "alcaldia": "Álvaro Obregón",
+                "nombre_instalacion": "VALENTÍN GÓMEZ FARÍAS",
+                "direccion": "Av Río Miscoac Oriente",
+                "costo": 0.0,
+                "deporte": "Gimnasio",
+                "servicios": "Baños, Seguridad",
+                "tipo_pasto": "Natural",
+                "horario": "8:00 - 18:00"
+            },
+            "geometry": { "type": "Point", "coordinates": [-99.206322843, 19.368424003] }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "no": 6,
+                "alcaldia": "Benito Juárez",
+                "nombre_instalacion": "COMPLEJO OLÍMPICO",
+                "direccion": "Av. División del Norte 2333",
+                "costo": 100.0,
+                "deporte": "Alberca, Gimnasio",
+                "servicios": "Baños, Comercios, Seguridad",
+                "tipo_pasto": "Sintético",
+                "horario": "6:00 - 22:00"
+            },
+            "geometry": { "type": "Point", "coordinates": [-99.155333333, 19.358472223] }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "no": 7,
+                "alcaldia": "Coyoacán",
+                "nombre_instalacion": "PARQUE ECOLÓGICO HUAYAMILPAS",
+                "direccion": "Rey Nezahualcóyotl, Huayamilpas",
+                "costo": 0.0,
+                "deporte": "Jardines",
+                "servicios": "Baños",
+                "tipo_pasto": "Natural",
+                "horario": "24 horas"
+            },
+            "geometry": { "type": "Point", "coordinates": [-99.149416667, 19.324944445] }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "no": 8,
+                "alcaldia": "Coyoacán",
+                "nombre_instalacion": "PARQUE LOS CULHUACANES",
+                "direccion": "Av Taxqueña s/n",
+                "costo": 0.0,
+                "deporte": "Juegos Infantiles",
+                "servicios": "Seguridad",
+                "tipo_pasto": "No especificado",
+                "horario": "7:00 - 19:00"
+            },
+            "geometry": { "type": "Point", "coordinates": [-99.12575, 19.337833333] }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "no": 9,
+                "alcaldia": "Coyoacán",
+                "nombre_instalacion": "DEPORTIVO FRANCISCO J. MUJICA",
+                "direccion": "CALZ. DE LA VIRGEN S/N",
+                "costo": 0.0,
+                "deporte": "Básquetbol",
+                "servicios": "Baños",
+                "tipo_pasto": "Sintético",
+                "horario": "8:00 - 18:00"
+            },
+            "geometry": { "type": "Point", "coordinates": [-99.100944444, 19.322138889] }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "no": 10,
+                "alcaldia": "Coyoacán",
+                "nombre_instalacion": "PARQUE FRANCISCO J. MUJICA",
+                "direccion": "Av Canal Nacional",
+                "costo": 0.0,
+                "deporte": "Fútbol",
+                "servicios": "Seguridad",
+                "tipo_pasto": "Natural",
+                "horario": "8:00 - 18:00"
+            },
+            "geometry": { "type": "Point", "coordinates": [-99.105605432, 19.325107494] }
+        },
+         {
+            "type": "Feature",
+            "properties": {
+                "no": 11,
+                "alcaldia": "Coyoacán",
+                "nombre_instalacion": "CLUB DEPORTIVO CHEROKEES",
+                "direccion": "CANDELARIA PÉREZ S/N",
+                "costo": 0.0,
+                "deporte": "Fútbol Americano",
+                "servicios": "Seguridad, Baños",
+                "tipo_pasto": "Natural",
+                "horario": "7:00 - 20:00"
+            },
+            "geometry": { "type": "Point", "coordinates": [-99.100055555, 19.320027778] }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "no": 12,
+                "alcaldia": "Coyoacán",
+                "nombre_instalacion": "DEPORTIVO ROSARIO IGLESIAS ROCHA",
+                "direccion": "CALZ. DEL HUESO #400",
+                "costo": 0.0,
+                "deporte": "Gimnasio",
+                "servicios": "Baños, Seguridad",
+                "tipo_pasto": "No especificado",
+                "horario": "8:00 - 18:00"
+            },
+            "geometry": { "type": "Point", "coordinates": [-99.121111111, 19.303333334] }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "no": 13,
+                "alcaldia": "Gustavo A. Madero",
+                "nombre_instalacion": "CENTRO DEPORTIVO MIGUEL ALEMÁN",
+                "direccion": "Av. Lindavista",
+                "costo": 0.0,
+                "deporte": "Alberca",
+                "servicios": "Baños, Seguridad",
+                "tipo_pasto": "No especificado",
+                "horario": "9:00 - 21:00"
+            },
+            "geometry": { "type": "Point", "coordinates": [-99.128722222, 19.492972222] }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "no": 14,
+                "alcaldia": "Gustavo A. Madero",
+                "nombre_instalacion": "DEPORTIVO 18 DE MARZO",
+                "direccion": "Av de los Insurgentes S/N",
+                "costo": 10.0,
+                "deporte": "Fútbol, Básquetbol",
+                "servicios": "Comercios, Baños, Seguridad",
+                "tipo_pasto": "Natural",
+                "horario": "8:00 - 22:00"
+            },
+            "geometry": { "type": "Point", "coordinates": [-99.124862286, 19.483448367] }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "no": 15,
+                "alcaldia": "Iztacalco",
+                "nombre_instalacion": "CENTRO DEPORTIVO SIGLO XXI",
+                "direccion": "VIADUCTO AV. RÍO DE LA PIEDAD S/N",
+                "costo": 0.0,
+                "deporte": "Juegos, Gimnasio",
+                "servicios": "Baños, Seguridad",
+                "tipo_pasto": "No especificado",
+                "horario": "8:00 - 18:00"
+            },
+            "geometry": { "type": "Point", "coordinates": [-99.089638889, 19.404277778] }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "no": 16,
+                "alcaldia": "Iztapalapa",
+                "nombre_instalacion": "DEPORTIVO ATM",
+                "direccion": "MUNICIPIO LIBRE 81",
+                "costo": 0.0,
+                "deporte": "Fútbol",
+                "servicios": "Seguridad",
+                "tipo_pasto": "Sintético",
+                "horario": "24 horas"
+            },
+            "geometry": { "type": "Point", "coordinates": [-99.136105065, 19.366580059] }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "no": 17,
+                "alcaldia": "Iztapalapa",
+                "nombre_instalacion": "CENTRO DEPORTIVO SANTA MARTHA ACATITLA",
+                "direccion": "Francisco Sarabia, Santa Martha Acatitla",
+                "costo": 0.0,
+                "deporte": "Juegos Infantiles",
+                "servicios": "Baños, Seguridad",
+                "tipo_pasto": "Natural",
+                "horario": "8:00 - 18:00"
+            },
+            "geometry": { "type": "Point", "coordinates": [-99.004335061, 19.360679666] }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "no": 18,
+                "alcaldia": "Iztapalapa",
+                "nombre_instalacion": "DEPORTIVO LA CASCADA",
+                "direccion": "Ignacio Zaragoza, San Lorenzo Xicoténcatl",
+                "costo": 0.0,
+                "deporte": "Alberca",
+                "servicios": "Seguridad",
+                "tipo_pasto": "No especificado",
+                "horario": "8:00 - 20:00"
+            },
+            "geometry": { "type": "Point", "coordinates": [-99.025361859, 19.381189823] }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "no": 19,
+                "alcaldia": "Iztapalapa",
+                "nombre_instalacion": "DEPORTIVO FRANCISCO I. MADERO",
+                "direccion": "Av. Telecomunicaciones S/N",
+                "costo": 0.0,
+                "deporte": "Juegos, Fútbol",
+                "servicios": "Baños, Seguridad",
+                "tipo_pasto": "Sintético",
+                "horario": "9:00 - 21:00"
+            },
+            "geometry": { "type": "Point", "coordinates": [-99.046043421, 19.380710669] }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "no": 20,
+                "alcaldia": "Iztapalapa",
+                "nombre_instalacion": "MÓDULO SANTA CRUZ MEYEHUALCO",
+                "direccion": "Calle 71 esquina Ermita",
+                "costo": 0.0,
+                "deporte": "Voleibol",
+                "servicios": "Seguridad, Baños",
+                "tipo_pasto": "No especificado",
+                "horario": "8:00 - 18:00"
+            },
+            "geometry": { "type": "Point", "coordinates": [-99.048400829, 19.343087205] }
+        },
+         {
+            "type": "Feature",
+            "properties": {
+                "no": 21,
+                "alcaldia": "Iztapalapa",
+                "nombre_instalacion": "DEPORTIVO SAN LORENZO TEZONCO",
+                "direccion": "San Antonio, Tezonco",
+                "costo": 0.0,
+                "deporte": "Básquetbol",
+                "servicios": "Baños, Seguridad",
+                "tipo_pasto": "No especificado",
+                "horario": "7:00 - 21:00"
+            },
+            "geometry": { "type": "Point", "coordinates": [-99.074166667, 19.310305556] }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "no": 22,
+                "alcaldia": "Iztapalapa",
+                "nombre_instalacion": "DEPORTIVO CUITLÁHUAC NORTE",
+                "direccion": "Eje 6 Sur S/N",
+                "costo": 0.0,
+                "deporte": "Fútbol, Gimnasio",
+                "servicios": "Comercios, Seguridad",
+                "tipo_pasto": "Sintético",
+                "horario": "8:00 - 20:00"
+            },
+            "geometry": { "type": "Point", "coordinates": [-99.044694444, 19.365694445] }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "no": 23,
+                "alcaldia": "Tlalpan",
+                "nombre_instalacion": "PARQUE MORELOS",
+                "direccion": "Guadalupe Victoria S/N",
+                "costo": 0.0,
+                "deporte": "Jardines",
+                "servicios": "Seguridad, Baños",
+                "tipo_pasto": "Natural",
+                "horario": "6:00 - 18:00"
+            },
+            "geometry": { "type": "Point", "coordinates": [-99.202055556, 19.284555556] }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "no": 24,
+                "alcaldia": "Tlalpan",
+                "nombre_instalacion": "DEPORTIVO SÁNCHEZ TABOADA",
+                "direccion": "YOBAIN 6-A, Héroes de Padierna",
+                "costo": 10.0,
+                "deporte": "Voleibol",
+                "servicios": "Baños, Seguridad",
+                "tipo_pasto": "Sintético",
+                "horario": "7:00 - 20:00"
+            },
+            "geometry": { "type": "Point", "coordinates": [-99.223222222, 19.283138889] }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "no": 25,
+                "alcaldia": "Tlalpan",
+                "nombre_instalacion": "DEPORTIVO REFUGIO VELÁZQUEZ",
+                "direccion": "PALMA S/N",
+                "costo": 0.0,
+                "deporte": "Fútbol",
+                "servicios": "Seguridad, Baños",
+                "tipo_pasto": "Natural",
+                "horario": "8:00 - 22:00"
+            },
+            "geometry": { "type": "Point", "coordinates": [-99.167277778, 19.249944444] }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "no": 26,
+                "alcaldia": "Tlalpan",
+                "nombre_instalacion": "DEPORTIVO SOLIDARIDAD AJUSCO",
+                "direccion": "Km 7.5 Picacho-Ajusco",
+                "costo": 20.0,
+                "deporte": "Fútbol",
+                "servicios": "Seguridad",
+                "tipo_pasto": "Natural",
+                "horario": "9:00 - 21:00"
+            },
+            "geometry": { "type": "Point", "coordinates": [-99.220849171, 19.268335723] }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "no": 27,
+                "alcaldia": "Tlalpan",
+                "nombre_instalacion": "DEPORTIVO LA JOYA",
+                "direccion": "Av. Insurgentes Sur, La Joya",
+                "costo": 15.0,
+                "deporte": "Gimnasio",
+                "servicios": "Baños, Seguridad",
+                "tipo_pasto": "No especificado",
+                "horario": "8:00 - 20:00"
+            },
+            "geometry": { "type": "Point", "coordinates": [-99.091913291, 19.233977016] }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "no": 28,
+                "alcaldia": "Tlalpan",
+                "nombre_instalacion": "DEPORTIVO CEFORMA",
+                "direccion": "Av. Hidalgo INT195",
+                "costo": 0.0,
+                "deporte": "Gimnasio",
+                "servicios": "Seguridad, Baños",
+                "tipo_pasto": "Natural",
+                "horario": "7:00 - 21:00"
+            },
+            "geometry": { "type": "Point", "coordinates": [-99.186861111, 19.280472222] }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "no": 29,
+                "alcaldia": "Tlalpan",
+                "nombre_instalacion": "DEPORTIVO VIVANCO",
+                "direccion": "Plaza de la Constitución",
+                "costo": 10.0,
+                "deporte": "Juegos Infantiles",
+                "servicios": "Comercios, Seguridad",
+                "tipo_pasto": "No especificado",
+                "horario": "8:00 - 18:00"
+            },
+            "geometry": { "type": "Point", "coordinates": [-99.173, 19.291194444] }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "no": 30,
+                "alcaldia": "Tlalpan",
+                "nombre_instalacion": "VILLA OLÍMPICA",
+                "direccion": "Av. Insurgentes Sur S/N",
+                "costo": 50.0,
+                "deporte": "Atletismo",
+                "servicios": "Baños, Seguridad",
+                "tipo_pasto": "No especificado",
+                "horario": "6:00 - 21:00"
+            },
+            "geometry": { "type": "Point", "coordinates": [-99.186149429, 19.300588092] }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "no": 31,
+                "alcaldia": "Xochimilco",
+                "nombre_instalacion": "PISTA OLÍMPICA VIRGILIO URIBE",
+                "direccion": "Periférico Sur S/N",
+                "costo": 0.0,
+                "deporte": "Remo",
+                "servicios": "Seguridad, Baños",
+                "tipo_pasto": "No especificado",
+                "horario": "8:00 - 18:00"
+            },
+            "geometry": { "type": "Point", "coordinates": [-99.104305555, 19.282972222] }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "no": 32,
+                "alcaldia": "Iztapalapa",
+                "nombre_instalacion": "DEPORTIVO CUITLÁHUAC SUR",
+                "direccion": "Eje 6 Sur S/N, Renovación",
+                "costo": 0.0,
+                "deporte": "Fútbol",
+                "servicios": "Seguridad, Baños",
+                "tipo_pasto": "Sintético",
+                "horario": "8:00 - 20:00"
+            },
+            "geometry": { "type": "Point", "coordinates": [-99.044686953, 19.357073555] }
+        }
+    ]
+}

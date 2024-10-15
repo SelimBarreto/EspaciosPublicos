@@ -1,0 +1,57 @@
+<!-- espacios/templates/espacios/mapa_interactivo.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa Interactivo de Instalaciones Deportivas</title>
+
+    <!-- Agrega Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" />
+
+    <!-- Agrega Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+
+    <style>
+        #map {
+            height: 600px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Mapa Interactivo de Instalaciones Deportivas</h1>
+    <div id="map"></div>
+
+    <script>
+        // Inicializa el mapa centrado en Ciudad de México
+        var map = L.map('map').setView([19.4326, -99.1332], 12);
+
+        // Agrega una capa de mapa base de OpenStreetMap
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
+
+        // Datos de tus instalaciones desde Django
+        var instalaciones = {{ instalaciones|safe }};
+
+        // Agrega los puntos de las instalaciones deportivas
+        instalaciones.features.forEach(function(instalacion) {
+            var coord = instalacion.geometry.coordinates;
+            var nombre = instalacion.properties.nombre_instalacion;
+            var alcaldia = instalacion.properties.alcaldia;
+
+            L.marker([coord[1], coord[0]])
+                .addTo(map)
+                .bindPopup('<b>' + nombre + '</b><br>' + alcaldia);
+        });
+
+        // Ejemplo: Polígono para representar áreas
+        var poligono = L.polygon([
+            [19.4326, -99.1332],
+            [19.4426, -99.1232],
+            [19.4226, -99.1432]
+        ]).addTo(map).bindPopup('Ejemplo de Polígono');
+    </script>
+</body>
+</html>

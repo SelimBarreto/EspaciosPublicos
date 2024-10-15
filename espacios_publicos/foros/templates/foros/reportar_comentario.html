@@ -1,0 +1,7 @@
+<h2>Reportar Comentario</h2>
+<p>Comentario: {{ comentario.contenido }}</p>
+<form method="POST">
+    {% csrf_token %}
+    <textarea name="motivo" placeholder="Describe el motivo del reporte" required></textarea><br>
+    <button type="submit" class="btn btn-danger">Reportar</button>
+</form>

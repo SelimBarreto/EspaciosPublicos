@@ -1,0 +1,47 @@
+<!-- espacios/templates/espacios/lista_espacios.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Espacios Deportivos</title>
+</head>
+<body>
+    <h1>Lista de Espacios Deportivos</h1>
+
+    <form method="GET" action="">
+        <input type="text" name="alcaldia" placeholder="Buscar por alcaldía" value="{{ request.GET.alcaldia }}">
+        <input type="text" name="deporte" placeholder="Buscar por deporte" value="{{ request.GET.deporte }}">
+
+        <label for="acepta_mascotas">¿Acepta Mascotas?</label>
+        <select name="acepta_mascotas" id="acepta_mascotas">
+            <option value="">Selecciona</option>
+            <option value="True" {% if request.GET.acepta_mascotas == "True" %}selected{% endif %}>Sí</option>
+            <option value="False" {% if request.GET.acepta_mascotas == "False" %}selected{% endif %}>No</option>
+        </select>
+
+        <label for="tipo_pasto">Tipo de Pasto</label>
+        <select name="tipo_pasto" id="tipo_pasto">
+            <option value="">Selecciona</option>
+            <option value="Natural" {% if request.GET.tipo_pasto == "Natural" %}selected{% endif %}>Natural</option>
+            <option value="Sintético" {% if request.GET.tipo_pasto == "Sintético" %}selected{% endif %}>Sintético</option>
+            <option value="Arcilla" {% if request.GET.tipo_pasto == "Arcilla" %}selected{% endif %}>Arcilla</option>
+            <option value="No especificado" {% if request.GET.tipo_pasto == "No especificado" %}selected{% endif %}>No especificado</option>
+        </select>
+
+        <button type="submit">Filtrar</button>
+    </form>
+
+    <ul>
+        {% for espacio in espacios %}
+            <li>
+                <a href="{% url 'detalle_espacio' espacio.id %}">
+                    {{ espacio.nombre }} - {{ espacio.alcaldia }}
+                </a>
+                <br>
+                {{ espacio.deporte }}
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

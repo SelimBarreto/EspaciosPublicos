@@ -1,0 +1,57 @@
+<!-- espacios/templates/espacios/detalle_espacio.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ espacio.nombre }}</title>
+
+    <!-- Cargar la API de Google Maps -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC3FT_Iw3qP-VDW50HaREgzgPbB_A-0JAQ" defer></script>
+
+    <script>
+        function initMap() {
+            const ubicacion = {
+                lat: {{ espacio.ubicacion.y|default:"19.432608" }},
+                lng: {{ espacio.ubicacion.x|default:"-99.133209" }}
+            };
+
+            const mapa = new google.maps.Map(document.getElementById("mapa"), {
+                zoom: 15,
+                center: ubicacion,
+            });
+
+            new google.maps.Marker({
+                position: ubicacion,
+                map: mapa,
+                title: "{{ espacio.nombre }}",
+            });
+        }
+
+        window.onload = initMap;
+    </script>
+
+    <style>
+        #mapa {
+            height: 400px;
+            width: 100%;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>{{ espacio.nombre }}</h1>
+    <p><strong>Alcaldía:</strong> {{ espacio.alcaldia }}</p>
+    <p><strong>Deporte:</strong> {{ espacio.deporte }}</p>
+    <p><strong>Horario:</strong> {{ espacio.horario }}</p>
+    <p><strong>Costo:</strong> ${{ espacio.costo }}</p>
+    <p><strong>Servicios:</strong> {{ espacio.servicios }}</p>
+    <p><strong>Tipo de Pasto:</strong> {{ espacio.tipo_pasto }}</p>
+    <p><strong>Acepta Mascotas:</strong> {% if espacio.acepta_mascotas %}Sí{% else %}No{% endif %}</p>
+
+    <div id="mapa"></div>
+
+    <a href="{% url 'lista_espacios' %}">Volver a la lista</a>
+    <a href="{% url 'detalle_foro' espacio.id %}">Ver Foro</a> <!-- Enlace al foro del espacio -->
+</body>
+</html>
